@@ -1,0 +1,50 @@
+body{
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+    border: 3px solid darkslategray;
+    border-radius: 2px;
+    border-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-style: solid;
+    width: 54px;
+    margin: 2px;
+    padding: 2px;
+    
+}
+.content{
+    /*text-align: center;*/
+    background-color: black;
+    width: 140px;
+
+
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+.content a{
+    display: block;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    border: 1px solid rgb(119, 117, 117);
+    border-radius: 20px;
+
+    
+}
+.dropdown:hover .content{
+    display: block;
+}
+.content a:hover{
+    background-color: teal;
+}
+
+a:hover{
+    text-decoration: underline;
+}
