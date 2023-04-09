@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,500;1,600&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background: #202020;
+    z-index: 1000;
+    
+}
+
+
+
+.nav-link{
+    margin: 2px;
+   
+    
+
+}
+.nav-link:hover{
+    color: #00BF85;
+}
+
+#navbarid > ul > li:nth-child(n) > a{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+
+}
+#navbarid > ul > li:nth-child(n) > a:hover{
+    color: #ffce00;
+
+}
+
+
+.navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    height: 60px;
+    
+    font-weight: 800;
+    font-size: x-large;
+}
+.navbar .container .vst{
+    color: #ffce00;
+    font-style: italic;
+}
+
+ 
+
+.homemid{
+    margin: 1rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+
+/* Highlight */
+
+.highlight{
+    color:rgb(0, 0, 161);
+}
+
+.homemid .text{
+    width: 35%;
+  
+    /* letter-spacing: 1px; */
+    color: black;
+
+}
+
+.homemid .homehero{
+    width:52%;
+}
+
+.homemid .homehero img{
+
+    width: 100%;
+    
+}
+
+.homemid .text a{
+   
+    
+    
+    box-shadow: rgba(219, 209, 68, 0.637) 0px 5px 30px; 
+    border-radius: 4px;
+    transition: all 0.5s ease 0s;
+    background: #ffce00;
+    font-family: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+ .homemid .text a i{
+    padding-left: 4px;
+    
+} 
+
+
+
+
+.service{
+    background-color: #000;
+}
+.service .one{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+}
+
+.service .row .one a{
+    background: #ffce00;
+    font-family: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+
+}
+.service .row .one a:hover{
+    background-color:rgb(0, 0, 161);
+    color:#fff;
+}
+.service .row .one img{
+    transition: 0.5s;
+    transform: scale(1.1);
+    margin-bottom: 12px;
+}
+
+.service .row .one:hover img{
+    transform: scale(1);
+}
+
+
+
+.info .modal-body .row .two{
+   
+    
+
+    justify-content: center;
+    align-items: center;
+     
+    margin: 5px ;
+    
+     padding:1rem; 
+    /* height: 200px;
+    width: 100vw;  */
+   
+    
+}
+ .info .modal-body .two{
+
+    background-color:#f43b86;
+    color: #fff;
+    
+    
+    margin-top: 20px;
+    margin: 6px;
+  
+} 
+
+
+/* //contact */
+
+.about{
+    background-color: #fff;
+}
+.about .one{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* padding: 1rem 1.5rem; */
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 2px 4px rgb(230, 226, 226); */
+    /* box-shadow: 0px 0px 2px 4px #ccc; */
+}
+.about .heading h2{
+    color: black;
+}
+
+.about .row .one a{
+    background: #ffce00;
+    font-family: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.about .row .one img{
+
+    clip-path: circle();
+    /* border:1px solid #ccc;
+    box-shadow: 2px 2px 2px 2px  #ccc;
+    box-shadow: 2px -2px 2px -2px  #ccc; */
+    padding:0px;
+   
+}
+
+
+.about .row .one a:hover{
+    background-color: #202020;
+    color:#fff;
+}
+
+
+
+
+.contact{
+    margin: 1rem;
+    padding-top: 4rem;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* background-color: black; */
+
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.contact .text{
+    width: 35%;
+  
+    /* letter-spacing: 1px; */
+    color: black;
+
+}
+
+.contact .contact_form{
+    width:52%;
+}
+
+.contact .contacthero img{
+
+    width: 100%;
+    
+}
+.form{
+    
+    
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    
+}
+
+
+
+
+.contact_form .form .form-group{
+    margin: 10px;
+}
+.contact_form .form .form-group h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_form .form  .form-group input{
+
+    margin-bottom: 10px;
+    outline-style: none;
+    width: 230px;
+    padding:3px;
+    border-radius:4px;
+    border: 2px solid #ccc;
+    
+    background-color: #f8f8f8;
+
+
+}
+.contact_form .form .form-group p{
+
+font-weight: 550;
+font-family:'Poppins', sans-serif; ;
+}
+
+
+.contact_form .form .form-group textarea{
+    height: 100px;
+    width: 230px;
+    padding: 4px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius:4px;
+    outline-style: none;
+    background-color: #f8f8f8;
+    resize: none;
+    margin-bottom: 8px;
+
+
+}
+
+
+.contact_form .form .form-group a{
+
+    background: #ffce00;
+     font-family: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+
+}
+.contact_form .form .form-group a:hover{
+
+background-color: rgb(0, 0, 161);
+
+color:white;
+
+}
+
+
+.contact_form .form .form_info{
+    margin-top: 0;
+    margin-left: 50px;
+   
+    
+    height: 420px;
+    width: 300px;
+    padding-top:14px ;
+
+}
+.contact_form .form .form_info .form_data{
+    margin-left: 10px;
+}
+
+.contact_form .form .form_info label{
+    font-weight: 550;
+
+    
+}
+.contact_form .form .form_info .basedin{
+    margin-top: 10px;
+}
+
+.contact_form .form .form_info p{
+    color: rgb(138, 128, 128);
+    margin:10px 0px 10px 0px;
+}
+
+.contact_form .form .form_info .whatsapp_btn {
+    background: #25D366;
+    font-family: 600;
+    padding: 0.5rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    
+   
+    
+
+}
+
+.contact_form .form .form_info .whatsapp_btn:hover{
+
+    background-color: #02be47;
+    color: white;
+
+}
+
+
+.contact_form .form .form_info .whatsapp_btn a{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+
+
+
+@media screen and ( max-width:968px) {
+
+    .form{
+        flex-direction: column;
+    }
+    
+}

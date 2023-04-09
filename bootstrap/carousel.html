@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel Image Slider | Bootstrap </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            .navbar{
+                position: relative;
+            }
+            .carousel{
+                position: relative;
+                top: 0px;
+            }
+            .carousel-caption{
+                bottom: 300px;
+                text-transform: uppercase;
+            }
+        </style>
+        
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark  " >
+
+            <div class="container">
+    
+    
+                <a href="" class="navbar-brand">RUSHIKESH</a>
+    
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+    
+                    <span class="navbar-toggler-icon bg-success"> </span>
+                </button>
+    
+                
+                
+                <div class="collapse navbar-collapse" id="navbarid">
+    
+    
+                    <ul class="navbar-nav ml-auto" >
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contact Us</a></li>
+    
+                    </ul>
+    
+                </div>
+            </div>
+        </nav>
+
+    <div class="carousel slide" id="myslider" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+               <img src="img1.jpg" alt="w" height="730px" width="1700px">
+               <div class="carousel-caption">
+                   <h3>Hello World</h3>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquid.</p>
+               </div>
+   
+            </div>
+   
+            <div class="carousel-item">
+               <img src="img2.jpg" alt="w" height="730px" width="1700px">
+               <div class="carousel-caption">
+                   <h2>Hello Rushikesh</h2>
+                   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, accusantium.</p>
+               </div>
+   
+            </div>
+            <div class="carousel-item ">
+               <img src="img3.jpg" alt="r" height="730px" width="1700px">
+               <div class="carousel-caption">
+                <h3>Hello London</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, aliquid.</p>
+               </div>
+   
+            </div>
+        </div>   
+
+        <ol class="carousel-indicators">
+            <li data-target="#myslider" data-slide-to="0" class="active"></li>
+            <li data-target="#myslider" data-slide-to="1"></li>
+            <li data-target="#myslider" data-slide-to="2"></li>
+          </ol>
+        
+
+        <a href="#myslider" data-slide="prev" class="carousel-control-prev">
+            <span class="carousel-control-prev-icon"> </span>
+        </a>
+   
+        <a href="#myslider" data-slide="next" class="carousel-control-next">
+            <span class="carousel-control-next-icon"> </span>
+        </a>
+
+    </div>
+</div>
+    
+</body>
+</html>
