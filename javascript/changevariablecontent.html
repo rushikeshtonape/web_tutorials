@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | change Html Content</title>
+    <style>
+        .item{
+            height: 100px;
+            padding: 10pX;
+            margin: 10px;
+            
+        }
+        #facebook{
+            background-color: aquamarine;
+        }
+        #apple{
+           background-color: brown;
+        }
+        #microsoft{
+          background-color: coral;
+        }
+        button{
+            padding:10px;
+            margin: 10px;
+            background-color: rgb(163, 241, 215);
+            border: none;
+            cursor: pointer;
+            outline-style: hidden;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="facebook">Facebook</div>
+        <div class="item" id="apple">Apple</div>
+        <div class="item" id="microsoft">Microsoft</div>
+    </div>
+    <button id="button1">Change Facebook Content</button>
+    <button id="button2">Double Click Event</button>
+
+
+
+<script>
+
+
+
+    document.getElementById('button1').onclick = function(){
+
+    var x = Math.round(Math.random(x)*256);
+    var y = Math.round(Math.random(x)*256);
+    var z = Math.round(Math.random(x)*256);
+    var colorx = 'rgb('+x+',' +y+',' +z+')';
+
+    var f = Math.round(Math.random(f)*256);
+    var s = Math.round(Math.random(s)*256);
+    var t = Math.round(Math.random(t)*256);
+    var colory = 'rgb('+f+',' +s+',' +t+')';
+
+    var a = Math.round(Math.random(a)*256);
+    var b = Math.round(Math.random(b)*256);
+    var c = Math.round(Math.random(c)*256);
+    var colorz = 'rgb('+a+',' +b+',' +c+')';
+
+ 
+    document.getElementById('apple').style.backgroundColor=colorx;
+    document.getElementById('apple').style.fontSize = '25px';
+
+    document.getElementById('facebook').style.backgroundColor=colory;
+     document.getElementById('facebook').style.fontSize = '25px';
+
+     document.getElementById('microsoft').style.backgroundColor=colorz;
+     document.getElementById('microsoft').style.fontSize = '25px';
+         
+      
+    }
+ 
+     
+</script>
+</body>
+</html>

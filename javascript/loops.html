@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops | Javascript</title>
+</head>
+<body>
+
+    <p id="js">Javascript</p>
+
+    <script>
+
+        for(i=0;i<10;i++){
+            document.getElementById("js").innerHTML+="<br>"+i;
+        }
+
+        for(j=10;j>1;j--){
+            document.getElementById("js").innerHTML+="<br>"+j;
+        }
+
+        for(i=0; i<4; i++){
+            document.getElementById("js").innerHTML+="<br>"+Math.pow(i,3);
+        }
+
+        var myarray = ["milk", "juice", "tea"];
+        // document.write(myarray);
+        for(i=0;i<myarray.length;i++){
+
+            document.getElementById("js").innerHTML+="<br>"+myarray[i];
+                
+        }
+
+        var number = [1,2,3];
+
+        for(i=0;i<number.length;i++){
+            number+=10;
+        }
+        // document.getElementById("js").innerHTML+="<br/>".number;
+
+    </script>
+    
+</body>
+</html>

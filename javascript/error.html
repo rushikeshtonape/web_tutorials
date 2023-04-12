@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<style>
+
+    #error{
+        color: brown;
+    }
+</style>
+<body>
+    <p>YOur password should contain at least 6 characters,1 NUMBER AND 1 CAPITAL LETTTER</p>
+    <p>Enter password :</p>
+    <input id="password1" type="password">
+    <p>Re-enter Password :</p>
+    <input type="password" id="password2"><br><br>
+    <button onclick="check()">Submit</button>
+    <p id="error"></p>
+
+    <script>
+
+        function check(){
+            var password1 = document.getElementById("password1").value;
+            var password2 = document.getElementById("password2").value;
+            var errorMessage = document.getElementById("error");
+            var errorThrow = "";
+
+            try{
+
+                if(password1.length<6){
+                    errorThrow +="<br /> Password Too Short";
+                    // throw errorThrow;
+
+                }
+                if(/[A-Z]/.test(password1) == false ){
+                    errorThrow +="<br /> Password should at least 1 capital letter";
+                    // throw errorThrow;
+                }
+                if(/\d/.test(password1)== false){
+                    errorThrow += "<br /> Password should include at least 1 digit";
+                    // throw errorThrow;
+                }
+                if(password1 != password2){
+                    errorThrow += "<br /> Password should match";
+                    // throw errorThrow;
+                }
+                if(password1 == password2){
+                    errorThrow += "<br /> Password Macthed;";
+                    //throw errorThrow;
+                }
+                throw errorThrow;
+
+            }
+            catch(err){
+                errorMessage.innerHTML = err;
+
+            }
+        }
+
+
+
+        // try{
+        // sum(3,4);
+        // }
+        // catch(err){
+        //     document.getElementById("error").innerHTML = err.message;
+
+        // }
+    </script>
+    
+</body>
+</html>

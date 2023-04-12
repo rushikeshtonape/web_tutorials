@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Boxes | Javascript</title>
+</head>
+<body>
+
+    <p>Javascript</p>
+
+    <script>
+        // window.alert("Hello Welcome To Javascript");
+        var acceptcookies = window.confirm("please comfirm to accept cookies");
+        window.alert(acceptcookies);
+        if(acceptcookies == true){
+            window.alert("you accept cookies");
+
+        }
+        else{
+            window.alert("you do not accept cookies");
+        }
+
+        var visitor = prompt("Please enter your name");
+
+        window.alert("hiii "+visitor.toUpperCase()+" How are you");
+    </script>
+    
+</body>
+</html>

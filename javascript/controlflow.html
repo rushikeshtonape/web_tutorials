@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condition statement | Javascript</title>
+    <p>Enter Speed:<input id="input" type="number" ><button onclick="FunctionSpeed()">Submit</button></p>
+
+    <p>Enter Season:<input id="season" type="text" ><button onclick="CheckSeason()">Submit</button></p>
+</head>
+<body>
+    
+    <script>
+
+    function FunctionSpeed(){
+
+    
+
+        var speed = document.getElementById("input").value;
+        if(speed>80){
+            window.alert("Your speed is too fast");
+        }
+        else if(speed<40){
+            window.alert("Your speed is too low");
+        }
+        else{
+            window.alert("you're in safe zone");
+
+        }
+
+       
+        
+
+    }
+
+    function CheckSeason(){
+        var x = document.getElementById("season").value.toLowerCase();
+
+        switch(x){
+            case "summer":
+                window.alert("summer season is on");
+             
+            case "rainy":
+                window.alert("rainy season is on");
+                
+            case "winter":
+                window.alert("winter season is on");
+
+        }
+    }
+    
+    </script>
+
+</body>
+</html>

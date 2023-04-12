@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array | Javascript</title>
+</head>
+<body>
+
+    <p id = "myP">Javascript</p>
+    
+
+
+
+    <script>
+        var myarray = ["Rushi" , 3921 , "Tonape"];
+
+        // window.alert(myarray);
+
+        window.console.log(myarray);
+        document.write("{",myarray ,"}\n");
+        function showname(x){
+
+            document.getElementById("myP").innerHTML += "<br>" + x;
+            
+        }
+
+        var newarray = ["Rushikesh" , "Vilas" , "Tonape"];
+        document.write("\n");
+        newarray[1]="MY";
+
+        showname(newarray[1]);
+        showname(newarray);
+
+        newarray[3] = "hello";
+        showname(newarray);
+
+        delete newarray[1];
+        showname(newarray);
+
+        newarray.splice(0,1);
+        showname(newarray);
+        newarray.splice(1,0,"Rushi", "Bhai");
+        showname(newarray);
+       
+
+        newarray.sort();
+
+        newarray.reverse();
+
+        document.write(newarray);
+
+        newarray[3] = "HEllo";
+        
+        document.writeln("\n",newarray);
+
+
+
+
+    </script>
+</body>
+</html>

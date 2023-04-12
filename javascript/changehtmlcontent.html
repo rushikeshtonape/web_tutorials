@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | change Html Content</title>
+    <style>
+        .item{
+            height: 100px;
+            padding: 10pX;
+            margin: 10px;
+            
+        }
+        #facebook{
+            background-color: aquamarine;
+        }
+        #apple{
+           background-color: brown;
+        }
+        #microsoft{
+          background-color: #9cd15c;
+        }
+        button{
+            padding:10px;
+            margin: 10px;
+            background-color: rgb(163, 241, 215);
+            border: none;
+            cursor: pointer;
+            outline-style: hidden;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="facebook">Facebook</div>
+        <div class="item" id="apple">Apple</div>
+        <div class="item" id="microsoft">Microsoft</div>
+    </div>
+    <button id="button1">Change Facebook Content</button>
+    <button id="button2">Double Click Event</button>
+
+    <button id ="button3">Click for magic</button>
+
+<script>
+    //  document.getElementById("button1").onclick=function(){
+
+    //     document.getElementById("facebook").innerHTML="<div>Facelook.</div>";
+    //  } 
+
+     document.getElementById("button2").ondblclick=()=>{
+         document.getElementById("apple").innerHTML=
+         "<h1>Rushikesh Tonape<h1>";
+     }
+
+
+     document.getElementById("button2").ondblclick = ()=>{
+        document.getElementById("microsoft").innerHTML="<h1>MICROSOFT<h1>";
+     }
+
+    document.getElementById("button1").onclick=function(){
+
+             document.getElementById("microsoft").style.width='100px';
+             document.getElementById('microsoft').style.fontFamily='Verdana, Geneva, Tahoma, sans-seri';
+    }  
+
+    document.getElementById("button3").onclick =()=>{
+        document.getElementById("facebook").style.backgroundColor = '#9cd15c';
+        document.getElementById("apple").style.backgroundColor = '#a52aa3';
+        document.getElementById("microsoft").style.backgroundColor = 'aquamarine';
+    }
+
+     
+</script>
+</body>
+</html>
