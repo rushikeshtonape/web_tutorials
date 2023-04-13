@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector </title>
+
+
+    <style>
+
+       .container{
+        display: block;
+        width: 350px;
+        height: 400px;
+        margin: auto;
+       }
+       input{
+           display: block;
+       }
+       input[type='text'],[type='email'] {
+           color: tomato;
+           border: 2px solid transparent;
+           outline-style: none;
+        font-size: 50px;
+       }
+       a:target{
+           background-color: violet;
+       }
+       /* li:nth-child(3){
+           color: #fff;
+           background-color: grey;
+       } */
+       li:nth-child(2n+4){
+        color: #fff;
+           background-color: grey;
+       }
+      
+    </style>
+</head>
+<body>
+
+
+    
+
+    <div class="container">
+        <form action="">
+            <a href="http://google.com" target="_blank">Go to google</a>
+            <input type="text" name="text" placeholder="Enter your name">
+            <input type="email" name="email" placeholder="Enter your Email">
+            <input type="button" value="Submit">        
+
+        </form>
+
+          <ul>
+             <li class="items" id="item-1">item-1</li>
+             <li class="items" id="item-2">item-2</li>
+             <li class="items" id="item-3">item-3</li>
+             <li class="items" id="item-4">item-4</li>
+             <li class="items" id="item-5">item-5</li>
+             <li class="items" id="item-6">item-6</li>
+             <li class="items" id="item-7">item-7</li>
+             <li class="items" id="item-8">item-8</li>
+             <li class="items" id="item-9">item-9</li>
+             <li class="items" id="item-10">item-10</li>
+          </ul>
+      
+
+
+    </div>
+</body>
+</html>

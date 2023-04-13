@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Rows and Gap</title>
+    <style>
+
+        .container{
+
+            display: grid;
+            grid-gap: 10px;
+            /* grid-template-rows: 1fr 2fr 3fr 4fr;
+            grid-auto-rows: 2fr; 
+            grid-template-rows: repeat(6 , 7fr); */ */
+            grid-template-columns: repeat(8 , 4fr);
+       
+        }
+
+        .items{
+            background-color: chocolate;
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+       <div class="items">Grid 101010</div>
+    </div>
+</body>
+</html>

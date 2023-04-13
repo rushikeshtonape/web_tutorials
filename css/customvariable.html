@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custome variable on css</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        :root{
+            --primary-color:rgb(0, 255, 234);
+            --danger-color:rgb(236, 55, 31);
+        }
+        .box{
+           
+            height: 150px;
+            width: 150px;
+            background-color:var(--danger-color);
+            box-shadow: 10px 10px 10px var(--primary-color);
+            margin: 14px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+
+         <div class="box" id="box1">
+
+         </div>
+         <div class="box" id="box2">
+
+         </div>
+         <div class="box" id="box3">
+
+         </div>
+
+
+
+    </div>
+</body>
+</html>

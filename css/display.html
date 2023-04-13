@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hey Welcome! </h1>
+    <h3>Saye Hello<input id = "input" name = "name" type = "text"><input type = "button" id = "btn" value = " say" onclick = "say();"></h3>
+    <div id="disp-content"></div>
+
+</body>
+<script>
+  name = document.getElementById("input").innerText;--
+  function say(){
+      console.log(document.getElementById("disp-content").innerHTML = "hello" + " " + name + "!");
+      document.getElementById("btn").value = " said ";
+    }
+
+</script>
+</html>

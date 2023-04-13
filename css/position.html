@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+       .container{
+           border: 4px solid black;
+           background-color: bisque;
+           margin: auto;
+           height: 3333px;
+       } 
+    
+      .box{
+          border: 2px solid red;
+          width:100px;
+          height:100px;
+          margin: 4px;
+          display: inline-block;
+
+      }
+      #box2{
+
+            /*position: relative;
+            top: 34px;
+            left:50px;*/
+
+            /*position:absolute;
+
+            top:30px;
+            left: 40px;*/
+
+
+            position: fixed;
+
+            right: 2px;
+            bottom: 25px;
+            margin-right: 25px;
+
+
+
+
+          /*position:sticky;
+           top:4px; */
+          
+          
+      }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+          <div class="box" id="box1">1</div>
+          <div class="box" id="box2">2</div>
+          <div class="box" id="box3">3</div>
+          <div class="box" id="box4">4</div>
+
+    </div>
+    
+</body>
+</html>

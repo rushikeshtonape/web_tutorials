@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+.container {
+  border: 1px solid black;
+  width: 648px;
+  height: 761px;
+  text-align: center;
+  margin: 25px auto;
+  background :rgb(255, 183, 195);
+}
+.head {
+  margin-top: 10px;
+}
+.table {
+  display: flex;
+  justify-content: center;
+}
+table .tb {
+  display: flex;
+  justify-content: center;
+}
+table td {
+  padding: 1px;
+  margin: 2px;
+}
+.table1 {
+  display: flex;
+  justify-content: center;
+  justify-items: start;
+  margin: 20px;
+  padding: 20px;
+}
+.table1 td {
+  padding: 5px;
+}
+input{
+    background : rgb(238, 235, 235);
+    outline-style: none;
+    border:none;
+    font-size: 18px;
+    
+}
+#qnum{
+    width:90px;
+}
+#pnum{
+    width:90px;
+}
+#total{
+    background : rgb(228, 222, 222);
+}
+.footer {
+  margin-top: 20px;
+  background: lightcyan;
+}
+.alltotal {
+  text-align: right;
+  margin-right: 80px;
+  font-weight: bold;
+}
