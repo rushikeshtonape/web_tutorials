@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Item | Textile Form</title>
+    <link rel="stylesheet" href="mastercss.css">
+</head>
+<body>
+    <div class = container >
+        <header class = head>
+            <h1> VST Software</h1>
+            <h3>Bill Of Material</h3>
+
+        </header>
+        <div class = table1>
+            <form action="#">
+            <table class = "tb">
+                
+                    <td><p>Serial No-      <input type = "number" ></p></td>
+                    <td ><p >Bill No-</p><input type = "number" name="bnum" id = "bnum" ></td>
+                    
+                </tr>
+                <tr>
+                    <td><p>Payment Method-<select id = "select">
+                        <option value="">--Select Payment Method</option>
+                        <option value="Cash">In Cash</option>
+                        <option value="Online">Online</option>
+                        <option value="Card">Card</option>
+                        <option value="Credit">Credit</option>
+                    </select></p></td>
+                    <td><p>Company-<input type = "text" ></p></td>
+                    
+                </tr>
+
+            </table>
+        </div>
+        
+            <div class = "table">
+            <table class= "tb2" id = "tbid">
+                <tr>
+                    <th>Item Name</th>
+                    <th>Quantity</th>
+                    <th>Per Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum1" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum1" class = "pnum"></td>
+                    <td class = "total" ><span id = "total1" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname" ></td>
+                    <td><input type = "number" name="qnum" id = "qnum2" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum2" class = "pnum"></td>
+                    <td class = "total" ><span id = "total2" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum3" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum3" class = "pnum"></td>
+                    <td class = "total" ><span id = "total3" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum4" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum4" class = "pnum"></td>
+                    <td class = "total" ><span id = "total4" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum5" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum5" class = "pnum"></td>
+                    <td class = "total" ><span id = "total5" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum6" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum6" class = "pnum"></td>
+                    <td class = "total" ><span id = "total6" ></td>
+                </tr>
+                <!-- <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum7" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum7" class = "pnum"></td>
+                    <td class = "total" ><span id = "total7" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum8" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum8" class = "pnum"></td>
+                    <td class = "total" ><span id = "total8" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum9" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum9" class = "pnum"></td>
+                    <td class = "total" ><span id = "total9" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum0" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum0" class = "pnum"></td>
+                    <td class = "total" ><span id = "total0" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum11" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum11" class = "pnum"></td>
+                    <td  class = "total"><span id = "total11" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum12" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum12" class = "pnum"></td>
+                    <td  class = "total"><span id = "total12" ></td>
+                </tr>
+                <tr>
+                    <td><input type = "text" name="iname" id = "iname"></td>
+                    <td><input type = "number" name="qnum" id = "qnum13" class = "qnum"></td>
+                    <td><input type = "number" name="pnum" id = "pnum13" class = "pnum"></td>
+                    <td  class = "total"><span id = "total13" ></td>
+                </tr> -->
+            </table>
+        </div><br>
+        <div class = "alltotal" id = "final">Total bill = </div><br>
+        <div class="submit">
+            <button type="submit" id = "sub">Submit</button>
+        </div>
+    </form>
+        <footer class = "footer">
+            <h2 style = "font-weight: normal;">Thank You!! Have a Nice Day :)</h2><br>
+        <div class = "contact" >
+            <h4 style = "font-weight: normal;">Contact Us : 998877665544, 998877665544</h4>
+            <h4 style = "font-weight: normal; ">Email id : vilastonape@gmail.com</h4>
+            
+        </div>
+         <h5 style = "background: #282828; color:#fff">&copy; allrights reserved 2020 - 2021</h5>
+        </footer>
+        
+        
+
+    </div>
+
+
+
+
+
+
+    <script src="masterscript.js"></script>
+</body>
+</html>
