@@ -1,0 +1,42 @@
+.container-background{
+    background-image: linear-gradient(to right bottom, #357deb, #657cf6, #8d78fd, #b372ff, #d869ff);
+    height: 100vh;
+}
+.contact-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-page-header{
+    margin-top: 10%;
+    margin-bottom: 48px;
+    text-align: center;
+    
+}
+.contact-page-header h1{
+    font-weight: bold;
+    
+}
+
+.contact-page-form label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffff;
+}
+/* .contact-page-form input{
+    background-color: #FAF3F3;
+    border : none;
+    text-decoration: none;
+} */
+/* .contact-page-form textarea{
+    
+    border : none;
+    text-decoration: none;
+} */
+.submit-btn{
+    font-size: 1.2rem;
+    text-align: center;
+
+}
